@@ -6,12 +6,13 @@ function App() {
   const [count, setCount] = useState(100);
 
   useEffect(() => {
-    console.warn("useEffect called");
-  }, [data]);
+    alert("Hey Welcome to my page");
+  }, []);
 
   useEffect(() => {
-    console.warn("useEffect called");
+    alert("Count was changed");
   }, [count]);
+
   return (
     <>
       <div className="flex flex-col gap-5 items-center justify-center h-screen">
