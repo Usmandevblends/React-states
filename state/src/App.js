@@ -15,7 +15,8 @@ function App() {
 
   return (
     <>
-      <div className="flex flex-col gap-5 items-center justify-center h-screen">
+      <div className="container">
+      <div className="flex flex-col gap-5 items-center justify-center h-screen ">
         <h1 className="text-3xl font-bold">Count : {count} </h1>
         <h1 className="text-3xl font-bold">Data : {data} </h1>
         <div className="flex gap-2">
@@ -32,6 +33,7 @@ function App() {
             Update data
           </button>
         </div>
+      </div>
       </div>
     </>
   );
