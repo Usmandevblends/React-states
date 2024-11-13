@@ -1,20 +1,28 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./style.css";
 import "./output.css";
 
-function App() {
-  const [count, setCount] = useState(0);
-  const [calculation, setCalculation] = useState(0);
-  useEffect(() => {
-    setCalculation(count + 2)
-  }, [count])
-  return (
-    <>
-      <p>Count: {count}</p>
-      <button onClick={() => setCount((c) => c + 1)}>+</button>
-      <p>Calculation: {calculation}</p>
-    </>
-  );
+class App extends React.Component {
+
+  constructor() {
+    super();
+    console.warn('constructor called')
+  }
+
+  componentDidUpdate() {
+    console.warn('componentDidUpdate')
+  }
+  
+  render() {
+    console.warn('render called')
+    return(
+      <>
+        <div className=" flex items-center justify-center h-[100px]">
+          <h1 className=" text-3xl font-serif">Component Did Update</h1>
+        </div>
+      </>
+    )
+  }
 }
 
 export default App;
