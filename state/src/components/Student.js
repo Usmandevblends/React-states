@@ -1,16 +1,9 @@
-import React from "react";
+import React from 'react'
 
-class Student extends React.Component {
-  componentWillUnmount() {
-    alert('componentWillUnmount called ')
-  }
-  render() {
-    return (
-      <>
-        <h1 className=" text-3xl font-black">Student Component</h1>
-      </>
-    )
-  }
+function Student() {
+  return (
+    <div>Student</div>
+  )
 }
 
-export default Student;
+export default Student
